@@ -13,7 +13,10 @@ export class AddCommand implements Command {
 				console.log(program.current); // undefined
 				console.log(options.c); // undefined
 				console.log(options.current); // undefined
+				console.log(program.options.c); // undefined
+				console.log(program.options.current); // undefined
 				console.log(options.parent.args[0]); // ./src
+				console.log(process.argv[3]); // ./src
 			});
 	}
 }
